@@ -8,8 +8,9 @@
 </head>
 
 <body class="grid place-items-center bg-slate-300">
-    <h1 class="text-5xl font-bold border-2 p-4 border-black	">European Capitals Quiz</h1>
-    <p class="text-4xl font-bold"> The Total Score is <span id="displayScore" class="text-4xl font-bold"></span> out of 5</p>
+    <h1 class="text-5xl font-bold border-2 p-4 border-black	mt-8">European Capitals Quiz</h1>
+    <button id="resetButton" class="border-2	 border-black px-4 pt-2 text-2xl font-extrabold	my-4 hover:bg-orange-500 ">Reset</button>
+    <p class="text-4xl font-bold"> The Total Score is <span id="displayScore" class="text-4xl font-bold"></span> out of 10</p>
 
     <div class="mt-6 border-2 border-black py-10 px-16 w-[350px]">
         <h1 class="text-3xl">Question 1</h1>
@@ -86,6 +87,87 @@
 
             <p id="Q5FinalAnswer" class="pt-6 font-bold text-2xl"></p>
     </div>
+
+
+    <div id="Q6Section" class="mt-6 border-2 border-black py-10 px-16 w-[350px] hidden">
+        <h1 class="text-3xl">Question 6</h1>
+        <p>What is the capital of Belgium?</p>
+
+            <ul class=" pt-4 space-y-2">
+                <li><button id="Q6Brussels" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Brussels</button> </li>
+                <li><button id="Q6Amsterdam" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Amsterdam</button> </li>
+                <li><button id="Q6Rome" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Rome</button> </li>
+                <li><button id="Q6Madrid" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Madrid</button> </li>
+            </ul>
+
+            <p id="Q6FinalAnswer" class="pt-6 font-bold text-2xl"></p>
+    </div>
+
+
+
+    <div id="Q7Section" class="mt-6 border-2 border-black py-10 px-16 w-[350px] hidden">
+        <h1 class="text-3xl">Question 7</h1>
+        <p>What is the capital of Italy?</p>
+
+            <ul class=" pt-4 space-y-2">
+                <li><button id="Q7Madrid" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Madrid</button> </li>
+                <li><button id="Q7Rome" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Rome</button> </li>
+                <li><button id="Q7Athens" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Athens</button> </li>
+                <li><button id="Q7Warsaw" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Warsaw</button> </li>
+            </ul>
+
+            <p id="Q7FinalAnswer" class="pt-6 font-bold text-2xl"></p>
+    </div>
+
+
+    <div id="Q8Section" class="mt-6 border-2 border-black py-10 px-16 w-[350px] hidden">
+        <h1 class="text-3xl">Question 8</h1>
+        <p>What is the capital of Portugal?</p>
+
+            <ul class=" pt-4 space-y-2">
+                <li><button id="Q8Amsterdam" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Amsterdam</button> </li>
+                <li><button id="Q8Bucharest" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Bucharest</button> </li>
+                <li><button id="Q8Vienna" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Vienna</button> </li>
+                <li><button id="Q8Lisbon" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Lisbon</button> </li>
+            </ul>
+
+            <p id="Q8FinalAnswer" class="pt-6 font-bold text-2xl"></p>
+    </div>
+
+
+    <div id="Q9Section" class="mt-6 border-2 border-black py-10 px-16 w-[350px] hidden">
+        <h1 class="text-3xl">Question 9</h1>
+        <p>What is the capital of Croatia?</p>
+
+            <ul class=" pt-4 space-y-2">
+                <li><button id="Q9Zagreb" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Zagreb</button> </li>
+                <li><button id="Q9Belgrade" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Belgrade</button> </li>
+                <li><button id="Q9Sarajevo" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Sarajevo</button> </li>
+                <li><button id="Q9Ljubljana" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Ljubljana</button> </li>
+            </ul>
+
+            <p id="Q9FinalAnswer" class="pt-6 font-bold text-2xl"></p>
+    </div>
+
+
+    <div id="Q10Section" class="mt-6 border-2 border-black py-10 px-16 w-[350px] hidden">
+        <h1 class="text-3xl">Question 10</h1>
+        <p>What is the capital of Spain?</p>
+
+            <ul class=" pt-4 space-y-2">
+                <li><button id="Q10Bratislava" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Bratislava</button> </li>
+                <li><button id="Q10Athens" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Athens</button> </li>
+                <li><button id="Q10Madrid" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Madrid</button> </li>
+                <li><button id="Q10Prague" class="border-2 px-4 py-2 font-bold	border-black hover:bg-orange-500 w-32">Prague</button> </li>
+            </ul>
+
+            <p id="Q10FinalAnswer" class="pt-6 font-bold text-2xl"></p>
+    </div>
+
+    <p id="quizFinished" class="hidden my-4 font-bold">Quiz finished, scroll to top to see the total score</p>
+
+    <button id="scrollToTopBtn" class="my-6 p-4 border-2 border-black font-bold hover:bg-orange-500 ">Scroll to top</button>
+
 
 <script src="main.js"></script>
 </body>

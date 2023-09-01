@@ -1,6 +1,21 @@
 totalScore = 0;
 document.getElementById("displayScore").innerHTML = 0;
 
+let resetButton = document.getElementById("resetButton");
+let scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+resetButton.addEventListener("click", function() {
+    location.reload(true);
+});
+
+scrollToTopBtn.addEventListener("click", function(){
+
+    window.scrollTo({ top: 0, behavior: 'smooth'});
+
+})
+
+
+
 //###########################################################################
 //QUESTION 1
 //Q1 START
@@ -416,7 +431,7 @@ let Q5Prague = document.getElementById("Q5Prague");
 let Q5Moscow = document.getElementById("Q5Moscow");
 let Q5Berlin = document.getElementById("Q5Berlin");
 
-//let Q5Section = document.getElementById("Q5Section");
+let Q6Section = document.getElementById("Q6Section");
 
 Q5Berlin.addEventListener("click", function() {
     totalScore=totalScore + 1;
@@ -434,8 +449,8 @@ Q5Berlin.addEventListener("click", function() {
     Q5Moscow.disabled = true;
     Q5Prague.disabled = true;
 
-    //Q5Section.classList.add("block");
-    //Q5Section.classList.remove("hidden");
+    Q6Section.classList.add("block");
+    Q6Section.classList.remove("hidden");
 });
 
 
@@ -455,8 +470,8 @@ Q5Paris.addEventListener("click", function() {
     Q5Moscow.disabled = true;
     Q5Prague.disabled = true;
 
-    //Q5Section.classList.add("block");
-    //Q5Section.classList.remove("hidden");
+    Q6Section.classList.add("block");
+    Q6Section.classList.remove("hidden");
 });
 
 
@@ -476,8 +491,8 @@ Q5Prague.addEventListener("click", function() {
     Q5Moscow.disabled = true;
     Q5Prague.disabled = true;
 
-    //Q5Section.classList.add("block");
-    //Q5Section.classList.remove("hidden");
+    Q6Section.classList.add("block");
+    Q6Section.classList.remove("hidden");
 });
 
 
@@ -497,11 +512,520 @@ Q5Moscow.addEventListener("click", function() {
     Q5Moscow.disabled = true;
     Q5Prague.disabled = true;
 
-    //Q5Section.classList.add("block");
-    //Q5Section.classList.remove("hidden");
+    Q6Section.classList.add("block");
+    Q6Section.classList.remove("hidden");
 });
-
 
 //QUESTION 5
 //Q5 END
+//###########################################################################
+
+
+
+
+//###########################################################################
+//QUESTION 6
+//Q6 START
+
+let Q6Brussels = document.getElementById("Q6Brussels");
+let Q6Amsterdam = document.getElementById("Q6Amsterdam");
+let Q6Rome = document.getElementById("Q6Rome");
+let Q6Madrid = document.getElementById("Q6Madrid");
+
+let Q7Section = document.getElementById("Q7Section");
+
+Q6Brussels.addEventListener("click", function() {
+    totalScore=totalScore + 1;
+    document.getElementById("displayScore").innerHTML = totalScore;
+    document.getElementById("Q6FinalAnswer").innerHTML = "Correct Answer!";
+    
+    Q6Brussels.classList.add("bg-green-500");
+    Q6Brussels.classList.remove("hover:bg-orange-500");
+    Q6Amsterdam.classList.remove("hover:bg-orange-500");
+    Q6Rome.classList.remove("hover:bg-orange-500");
+    Q6Madrid.classList.remove("hover:bg-orange-500");
+
+    Q6Brussels.disabled = true;
+    Q6Amsterdam.disabled = true;
+    Q6Rome.disabled = true;
+    Q6Madrid.disabled = true;
+
+    Q7Section.classList.add("block");
+    Q7Section.classList.remove("hidden");
+});
+
+
+Q6Amsterdam.addEventListener("click", function() {
+    document.getElementById("Q6FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q6Brussels.classList.add("bg-green-500");
+    Q6Brussels.classList.remove("hover:bg-orange-500");
+    Q6Amsterdam.classList.remove("hover:bg-orange-500");
+    Q6Rome.classList.remove("hover:bg-orange-500");
+    Q6Madrid.classList.remove("hover:bg-orange-500");
+
+    Q6Amsterdam.classList.add("bg-orange-500");
+
+    Q6Brussels.disabled = true;
+    Q6Amsterdam.disabled = true;
+    Q6Rome.disabled = true;
+    Q6Madrid.disabled = true;
+
+    Q7Section.classList.add("block");
+    Q7Section.classList.remove("hidden");
+});
+
+Q6Rome.addEventListener("click", function() {
+    document.getElementById("Q6FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q6Brussels.classList.add("bg-green-500");
+    Q6Brussels.classList.remove("hover:bg-orange-500");
+    Q6Amsterdam.classList.remove("hover:bg-orange-500");
+    Q6Rome.classList.remove("hover:bg-orange-500");
+    Q6Madrid.classList.remove("hover:bg-orange-500");
+
+    Q6Rome.classList.add("bg-orange-500");
+
+    Q6Brussels.disabled = true;
+    Q6Amsterdam.disabled = true;
+    Q6Rome.disabled = true;
+    Q6Madrid.disabled = true;
+
+    Q7Section.classList.add("block");
+    Q7Section.classList.remove("hidden");
+});
+
+
+Q6Madrid.addEventListener("click", function() {
+    document.getElementById("Q6FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q6Brussels.classList.add("bg-green-500");
+    Q6Brussels.classList.remove("hover:bg-orange-500");
+    Q6Amsterdam.classList.remove("hover:bg-orange-500");
+    Q6Rome.classList.remove("hover:bg-orange-500");
+    Q6Madrid.classList.remove("hover:bg-orange-500");
+
+    Q6Madrid.classList.add("bg-orange-500");
+
+    Q6Brussels.disabled = true;
+    Q6Amsterdam.disabled = true;
+    Q6Rome.disabled = true;
+    Q6Madrid.disabled = true;
+
+    Q7Section.classList.add("block");
+    Q7Section.classList.remove("hidden");
+});
+
+
+//QUESTION 6
+//Q6 END
+//###########################################################################
+
+
+
+
+
+//###########################################################################
+//QUESTION 7
+//Q7 START
+
+let Q7Madrid = document.getElementById("Q7Madrid");
+let Q7Rome = document.getElementById("Q7Rome");
+let Q7Athens = document.getElementById("Q7Athens");
+let Q7Warsaw = document.getElementById("Q7Warsaw");
+
+let Q8Section = document.getElementById("Q8Section");
+
+
+Q7Rome.addEventListener("click", function() {
+    totalScore=totalScore + 1;
+    document.getElementById("displayScore").innerHTML = totalScore;
+    document.getElementById("Q7FinalAnswer").innerHTML = "Correct Answer!";
+    
+    Q7Rome.classList.add("bg-green-500");
+    Q7Rome.classList.remove("hover:bg-orange-500");
+    Q7Madrid.classList.remove("hover:bg-orange-500");
+    Q7Athens.classList.remove("hover:bg-orange-500");
+    Q7Warsaw.classList.remove("hover:bg-orange-500");
+
+    Q7Rome.disabled = true;
+    Q7Madrid.disabled = true;
+    Q7Athens.disabled = true;
+    Q7Warsaw.disabled = true;
+
+    Q8Section.classList.add("block");
+    Q8Section.classList.remove("hidden");
+});
+
+
+
+Q7Madrid.addEventListener("click", function() {
+    document.getElementById("Q7FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q7Rome.classList.add("bg-green-500");
+    Q7Rome.classList.remove("hover:bg-orange-500");
+    Q7Madrid.classList.remove("hover:bg-orange-500");
+    Q7Athens.classList.remove("hover:bg-orange-500");
+    Q7Warsaw.classList.remove("hover:bg-orange-500");
+
+    Q7Madrid.classList.add("bg-orange-500");
+
+    Q7Rome.disabled = true;
+    Q7Madrid.disabled = true;
+    Q7Athens.disabled = true;
+    Q7Warsaw.disabled = true;
+
+    Q8Section.classList.add("block");
+    Q8Section.classList.remove("hidden");
+});
+
+
+Q7Athens.addEventListener("click", function() {
+    document.getElementById("Q7FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q7Rome.classList.add("bg-green-500");
+    Q7Rome.classList.remove("hover:bg-orange-500");
+    Q7Madrid.classList.remove("hover:bg-orange-500");
+    Q7Athens.classList.remove("hover:bg-orange-500");
+    Q7Warsaw.classList.remove("hover:bg-orange-500");
+
+    Q7Athens.classList.add("bg-orange-500");
+
+    Q7Rome.disabled = true;
+    Q7Madrid.disabled = true;
+    Q7Athens.disabled = true;
+    Q7Warsaw.disabled = true;
+
+    Q8Section.classList.add("block");
+    Q8Section.classList.remove("hidden");
+});
+
+
+Q7Warsaw.addEventListener("click", function() {
+    document.getElementById("Q7FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q7Rome.classList.add("bg-green-500");
+    Q7Rome.classList.remove("hover:bg-orange-500");
+    Q7Madrid.classList.remove("hover:bg-orange-500");
+    Q7Athens.classList.remove("hover:bg-orange-500");
+    Q7Warsaw.classList.remove("hover:bg-orange-500");
+
+    Q7Warsaw.classList.add("bg-orange-500");
+
+    Q7Rome.disabled = true;
+    Q7Madrid.disabled = true;
+    Q7Athens.disabled = true;
+    Q7Warsaw.disabled = true;
+
+    Q8Section.classList.add("block");
+    Q8Section.classList.remove("hidden");
+});
+
+//QUESTION 7
+//Q7 END
+//###########################################################################
+
+
+
+
+//###########################################################################
+//QUESTION 8
+//Q8 START
+
+let Q8Amsterdam = document.getElementById("Q8Amsterdam");
+let Q8Bucharest = document.getElementById("Q8Bucharest");
+let Q8Vienna = document.getElementById("Q8Vienna");
+let Q8Lisbon = document.getElementById("Q8Lisbon");
+
+let Q9Section = document.getElementById("Q9Section");
+
+
+Q8Lisbon.addEventListener("click", function() {
+    totalScore=totalScore + 1;
+    document.getElementById("displayScore").innerHTML = totalScore;
+    document.getElementById("Q8FinalAnswer").innerHTML = "Correct Answer!";
+    
+    Q8Lisbon.classList.add("bg-green-500");
+    Q8Lisbon.classList.remove("hover:bg-orange-500");
+    Q8Amsterdam.classList.remove("hover:bg-orange-500");
+    Q8Bucharest.classList.remove("hover:bg-orange-500");
+    Q8Vienna.classList.remove("hover:bg-orange-500");
+
+    Q8Lisbon.disabled = true;
+    Q8Amsterdam.disabled = true;
+    Q8Bucharest.disabled = true;
+    Q8Vienna.disabled = true;
+
+    Q9Section.classList.add("block");
+    Q9Section.classList.remove("hidden");
+});
+
+
+
+Q8Amsterdam.addEventListener("click", function() {
+    document.getElementById("Q8FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q8Lisbon.classList.add("bg-green-500");
+    Q8Lisbon.classList.remove("hover:bg-orange-500");
+    Q8Amsterdam.classList.remove("hover:bg-orange-500");
+    Q8Bucharest.classList.remove("hover:bg-orange-500");
+    Q8Vienna.classList.remove("hover:bg-orange-500");
+
+    Q8Amsterdam.classList.add("bg-orange-500");
+
+    Q8Lisbon.disabled = true;
+    Q8Amsterdam.disabled = true;
+    Q8Bucharest.disabled = true;
+    Q8Vienna.disabled = true;
+
+    Q9Section.classList.add("block");
+    Q9Section.classList.remove("hidden");
+});
+
+
+Q8Bucharest.addEventListener("click", function() {
+    document.getElementById("Q8FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q8Lisbon.classList.add("bg-green-500");
+    Q8Lisbon.classList.remove("hover:bg-orange-500");
+    Q8Amsterdam.classList.remove("hover:bg-orange-500");
+    Q8Bucharest.classList.remove("hover:bg-orange-500");
+    Q8Vienna.classList.remove("hover:bg-orange-500");
+
+    Q8Bucharest.classList.add("bg-orange-500");
+
+    Q8Lisbon.disabled = true;
+    Q8Amsterdam.disabled = true;
+    Q8Bucharest.disabled = true;
+    Q8Vienna.disabled = true;
+
+    Q9Section.classList.add("block");
+    Q9Section.classList.remove("hidden");
+});
+
+
+Q8Vienna.addEventListener("click", function() {
+    document.getElementById("Q8FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q8Lisbon.classList.add("bg-green-500");
+    Q8Lisbon.classList.remove("hover:bg-orange-500");
+    Q8Amsterdam.classList.remove("hover:bg-orange-500");
+    Q8Bucharest.classList.remove("hover:bg-orange-500");
+    Q8Vienna.classList.remove("hover:bg-orange-500");
+
+    Q8Vienna.classList.add("bg-orange-500");
+
+    Q8Lisbon.disabled = true;
+    Q8Amsterdam.disabled = true;
+    Q8Bucharest.disabled = true;
+    Q8Vienna.disabled = true;
+
+    Q9Section.classList.add("block");
+    Q9Section.classList.remove("hidden");
+});
+
+//QUESTION 8
+//Q8 END
+//###########################################################################
+
+
+
+//###########################################################################
+//QUESTION 9
+//Q9 START
+
+let Q9Zagreb = document.getElementById("Q9Zagreb");
+let Q9Belgrade = document.getElementById("Q9Belgrade");
+let Q9Sarajevo = document.getElementById("Q9Sarajevo");
+let Q9Ljubljana = document.getElementById("Q9Ljubljana");
+
+let Q10Section = document.getElementById("Q10Section");
+
+
+Q9Zagreb.addEventListener("click", function() {
+    totalScore=totalScore + 1;
+    document.getElementById("displayScore").innerHTML = totalScore;
+    document.getElementById("Q9FinalAnswer").innerHTML = "Correct Answer!";
+    
+    Q9Zagreb.classList.add("bg-green-500");
+    Q9Zagreb.classList.remove("hover:bg-orange-500");
+    Q9Belgrade.classList.remove("hover:bg-orange-500");
+    Q9Sarajevo.classList.remove("hover:bg-orange-500");
+    Q9Ljubljana.classList.remove("hover:bg-orange-500");
+
+    Q9Zagreb.disabled = true;
+    Q9Belgrade.disabled = true;
+    Q9Sarajevo.disabled = true;
+    Q9Ljubljana.disabled = true;
+
+    Q10Section.classList.add("block");
+    Q10Section.classList.remove("hidden");
+});
+
+
+Q9Belgrade.addEventListener("click", function() {
+    document.getElementById("Q9FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q9Zagreb.classList.add("bg-green-500");
+    Q9Zagreb.classList.remove("hover:bg-orange-500");
+    Q9Belgrade.classList.remove("hover:bg-orange-500");
+    Q9Sarajevo.classList.remove("hover:bg-orange-500");
+    Q9Ljubljana.classList.remove("hover:bg-orange-500");
+
+    Q9Belgrade.classList.add("bg-orange-500");
+
+    Q9Zagreb.disabled = true;
+    Q9Belgrade.disabled = true;
+    Q9Sarajevo.disabled = true;
+    Q9Ljubljana.disabled = true;
+
+    Q10Section.classList.add("block");
+    Q10Section.classList.remove("hidden");
+});
+
+
+Q9Sarajevo.addEventListener("click", function() {
+    document.getElementById("Q9FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q9Zagreb.classList.add("bg-green-500");
+    Q9Zagreb.classList.remove("hover:bg-orange-500");
+    Q9Belgrade.classList.remove("hover:bg-orange-500");
+    Q9Sarajevo.classList.remove("hover:bg-orange-500");
+    Q9Ljubljana.classList.remove("hover:bg-orange-500");
+
+    Q9Sarajevo.classList.add("bg-orange-500");
+
+    Q9Zagreb.disabled = true;
+    Q9Belgrade.disabled = true;
+    Q9Sarajevo.disabled = true;
+    Q9Ljubljana.disabled = true;
+
+    Q10Section.classList.add("block");
+    Q10Section.classList.remove("hidden");
+});
+
+
+Q9Ljubljana.addEventListener("click", function() {
+    document.getElementById("Q9FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q9Zagreb.classList.add("bg-green-500");
+    Q9Zagreb.classList.remove("hover:bg-orange-500");
+    Q9Belgrade.classList.remove("hover:bg-orange-500");
+    Q9Sarajevo.classList.remove("hover:bg-orange-500");
+    Q9Ljubljana.classList.remove("hover:bg-orange-500");
+
+    Q9Ljubljana.classList.add("bg-orange-500");
+
+    Q9Zagreb.disabled = true;
+    Q9Belgrade.disabled = true;
+    Q9Sarajevo.disabled = true;
+    Q9Ljubljana.disabled = true;
+
+    Q10Section.classList.add("block");
+    Q10Section.classList.remove("hidden");
+});
+
+//QUESTION 9
+//Q9 END
+//###########################################################################
+
+
+
+//###########################################################################
+//QUESTION 10
+//Q10 START
+
+let Q10Bratislava = document.getElementById("Q10Bratislava");
+let Q10Athens = document.getElementById("Q10Athens");
+let Q10Madrid = document.getElementById("Q10Madrid");
+let Q10Prague = document.getElementById("Q10Prague");
+
+let quizFinished = document.getElementById("quizFinished");
+
+Q10Madrid.addEventListener("click", function() {
+    totalScore=totalScore + 1;
+    document.getElementById("displayScore").innerHTML = totalScore;
+    document.getElementById("Q10FinalAnswer").innerHTML = "Correct Answer!";
+    
+    Q10Madrid.classList.add("bg-green-500");
+    Q10Madrid.classList.remove("hover:bg-orange-500");
+    Q10Bratislava.classList.remove("hover:bg-orange-500");
+    Q10Athens.classList.remove("hover:bg-orange-500");
+    Q10Prague.classList.remove("hover:bg-orange-500");
+
+    Q10Madrid.disabled = true;
+    Q10Bratislava.disabled = true;
+    Q10Athens.disabled = true;
+    Q10Prague.disabled = true;
+
+    quizFinished.classList.add("block");
+    quizFinished.classList.remove("hidden");
+});
+
+
+Q10Bratislava.addEventListener("click", function() {
+    document.getElementById("Q10FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q10Madrid.classList.add("bg-green-500");
+    Q10Madrid.classList.remove("hover:bg-orange-500");
+    Q10Bratislava.classList.remove("hover:bg-orange-500");
+    Q10Athens.classList.remove("hover:bg-orange-500");
+    Q10Prague.classList.remove("hover:bg-orange-500");
+
+    Q10Bratislava.classList.add("bg-orange-500");
+
+    Q10Madrid.disabled = true;
+    Q10Bratislava.disabled = true;
+    Q10Athens.disabled = true;
+    Q10Prague.disabled = true;
+
+    quizFinished.classList.add("block");
+    quizFinished.classList.remove("hidden");
+});
+
+
+Q10Athens.addEventListener("click", function() {
+    document.getElementById("Q10FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q10Madrid.classList.add("bg-green-500");
+    Q10Madrid.classList.remove("hover:bg-orange-500");
+    Q10Bratislava.classList.remove("hover:bg-orange-500");
+    Q10Athens.classList.remove("hover:bg-orange-500");
+    Q10Prague.classList.remove("hover:bg-orange-500");
+
+    Q10Athens.classList.add("bg-orange-500");
+
+    Q10Madrid.disabled = true;
+    Q10Bratislava.disabled = true;
+    Q10Athens.disabled = true;
+    Q10Prague.disabled = true;
+
+    quizFinished.classList.add("block");
+    quizFinished.classList.remove("hidden");
+});
+
+
+Q10Prague.addEventListener("click", function() {
+    document.getElementById("Q10FinalAnswer").innerHTML = "Wrong Answer!";
+    
+    Q10Madrid.classList.add("bg-green-500");
+    Q10Madrid.classList.remove("hover:bg-orange-500");
+    Q10Bratislava.classList.remove("hover:bg-orange-500");
+    Q10Athens.classList.remove("hover:bg-orange-500");
+    Q10Prague.classList.remove("hover:bg-orange-500");
+
+    Q10Prague.classList.add("bg-orange-500");
+
+    Q10Madrid.disabled = true;
+    Q10Bratislava.disabled = true;
+    Q10Athens.disabled = true;
+    Q10Prague.disabled = true;
+
+    quizFinished.classList.add("block");
+    quizFinished.classList.remove("hidden");
+});
+
+
+//QUESTION 10
+//Q10 END
 //###########################################################################
